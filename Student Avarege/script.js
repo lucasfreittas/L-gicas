@@ -27,3 +27,4 @@ if(avarege > 6){
 }
 
 avarege(grades)
+
