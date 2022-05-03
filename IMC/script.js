@@ -25,12 +25,12 @@ const pacients = [
     },
 ]
 
-const IMC = (weight, height) => {
-    let calc = (weight / (height ** 2)).toFixed(2)
-    return calc
+const IMC = (height, weight) => {
+    let calc = (weight / (height**2)).toFixed(2)
+    return(calc)
 }
 
-for(let i of pacients){
-    let pacient = IMC(i.weight, i.height)
-    alert(`${i.name} tem o IMC de: ${pacient}`)
+for(let pacient of pacients){
+    let pacientCalc = IMC(pacient.height, pacient.weight)
+    alert(`${pacient.name} tem o IMC de: ${pacientCalc}`)
 }
